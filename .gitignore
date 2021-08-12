@@ -1,2 +1,4 @@
 test/
 train/
+tlt_pretrained_detectnet_v2_vresnet18/
+tfrecords/
