@@ -12,7 +12,7 @@ inferencer_config{
   gpu_index: 0
   #model handler config
   tlt_config{
-    model: "/workspace/tlt-experiments/detectnet_v2/experiment_dir_retrain/weights/resnet18_detector_pruned.tlt"
+    model: "/workspace/tlt-experiments/mask-detect-tlt/detectnet_v2/weights/model.tlt"
     #model: "/home/detectnet_v2/experiment_dir_unpruned/weights/model.tlt"
   }
 }
