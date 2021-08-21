@@ -25,3 +25,12 @@ Detectnet_v2 requires kitti-formatted data to converted to TFRecords. The detect
 The detectnet_v2/specs/detectnet_v2_train_eval_config.txt contains all configuration for the initial training of the model, and the start_training.sh file starts the training process.
 
 I mostly used the default settings provided in the **Creating a Configuration File** section of the TLT guide for my first run. I did need to update the labels to match mine of with_mask and without_mask. I also had to change the augmentation_config->preprocessing->enable_auto_resize flag to True, because my input images were not all the same shape.
+
+## First evaluation
+
+The start_eval.sh file will run the evaluation on the test set. My initial run gives suspiciously high precision:
+
+|class name   | average precision (in %)|
+|-------------|-------------------------|
+|with_mask    | 98.9032                 |
+|without_mask | 99.2055                 |
