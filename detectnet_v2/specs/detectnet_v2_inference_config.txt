@@ -12,7 +12,7 @@ inferencer_config{
   gpu_index: 0
   #model handler config
   tlt_config{
-    model: "/workspace/tlt-experiments/mask-detect-tlt/detectnet_v2/weights/model.tlt"
+    model: "/workspace/tlt-experiments/mask-detect-tlt/detectnet_v2/weights/model-pruned.tlt"
     #model: "/home/detectnet_v2/experiment_dir_unpruned/weights/model.tlt"
   }
 }
@@ -35,7 +35,8 @@ bbox_handler_config{
         coverage_threshold: 0.00
         dbscan_eps: 0.3
         dbscan_min_samples: 0.05
-        dbscan_confidence_threshold: 0.9
+        #dbscan_confidence_threshold: 0.9
+        dbscan_confidence_threshold: 5.0
         minimum_bounding_box_height: 4
       }
     }
@@ -54,7 +55,8 @@ bbox_handler_config{
         coverage_threshold: 0.00
         dbscan_eps: 0.3
         dbscan_min_samples: 0.05
-        dbscan_confidence_threshold: 0.9
+        #dbscan_confidence_threshold: 0.9
+        dbscan_confidence_threshold: 5.0
         minimum_bounding_box_height: 4
       }
     }
