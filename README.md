@@ -51,6 +51,6 @@ I followed the walkthrough for pruning and retraining and got similar success. I
 
 1. Plug a model I've trained into the python-deepstream demo. This will allow me to assess how it functions in video. It is also more directly applicable for the LENS project.
 1. Collect more data.
-  1. I could use actual masked photos and run them against my current model to see how well the overlay mask actually simulates reality. 
-  1. I can also use actual masked photos for training.
-  1. I'd like to take some photos of people in masks around Seagate to supply some additional training material.
+   1. I could use actual masked photos and run them against my current model to see how well the overlay mask actually simulates reality. 
+   1. I can also use actual masked photos for training.
+   1. I'd like to take some photos of people in masks around Seagate to supply some additional training material.
