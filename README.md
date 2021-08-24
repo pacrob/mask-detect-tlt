@@ -43,6 +43,13 @@ The run_inference.sh file contains the command to run the model on the test set 
 
 After running inference the first time, all examples I checked were boxed correctly, but that there were many false-positive boxes drawn along with the correct ones. For example, in the data/inference_on_test folder, the image for mask_34-with-mask shows 2 boxes, one red and one green. Checking the corresponding txt file (in the labels folder), I can see that with_mask got a much higher score of 37.341, compared to without_mask's score of 1.677. I found that updating the dbscan_confidence_threshold from 0.9 to 5.0, I was able to eliminate most of the false positives.
 
+Before adjusting confidence:
+![before](sample_images/mask-34-before.jpg)
+
+
+After adjusting confidence:
+![after](sample_images/mask-34-after.jpg)
+
 ## Pruning, retraining, and exporting 
 
 I followed the walkthrough for pruning and retraining and got similar success. I exported the model to a .etlt file. 
